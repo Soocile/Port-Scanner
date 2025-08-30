@@ -47,3 +47,6 @@ Run the compiled executable from a Command Prompt with administrator rights, pro
 PortScanner.exe <IP_Address>
 # Contributing
 We welcome contributions! Please open an issue or submit a pull request if you have ideas for improvements.
+
+# LICENSE
+This project is licensed under MIT license.
