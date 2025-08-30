@@ -1,52 +1,49 @@
-PortScanner & OS Detector
-This project is a powerful, multi-functional network discovery and security auditing tool developed using C++ and the Winsock library. It uses low-level raw sockets to gather in-depth information about target systems on a network.
+# PortScanner & OS Detector
+This project is a high-performance network discovery and security auditing tool developed in C++. It utilizes raw sockets to gather in-depth information about target systems, including open ports and operating system details.
 
-Key Features
-Multithreaded Port Scanning: Rapidly scans for open TCP and UDP ports on a specified IP address.
+# Key Features
+Blazing Fast Multithreaded Scanning: Efficiently scans a target IP for open TCP and UDP ports using a multithreaded architecture.
 
-Service and OS Fingerprinting: Analyzes unique characteristics of incoming network packets, such as TTL (Time to Live), TCP Window Size, and TCP Options, to accurately determine the target system's operating system.
+Advanced OS Fingerprinting: Goes beyond simple TTL checks. It analyzes the unique signatures of inbound packets, including TCP Window Size and TCP Options, to provide a highly accurate OS guess.
 
-Low-Level Network Access: Capable of directly crafting and reading TCP and IP packet headers, allowing for byte-level manipulation and analysis of network traffic.
+Low-Level Network Interaction: Crafts and dissects custom TCP/IP packets at the byte level, demonstrating a deep understanding of network protocols.
 
-Technologies Used
-C++: Chosen for its high performance and ability to perform low-level system access.
+# Technologies Used
+C++: Chosen for its power and direct access to system resources.
 
-Winsock (Windows Sockets 2): The core library for network programming on the Windows operating system.
+Winsock (Windows Sockets 2): The core API for networking on Windows.
 
-Raw Sockets: Utilized to create and send custom TCP/IP packets, a feature that requires administrator privileges.
+Raw Sockets: Enables the creation of custom packets, a fundamental technique in network security and analysis.
 
-Legal and Ethical Disclaimer
-This tool is developed for educational and research purposes only. The developer assumes no liability for any misuse or illegal activities performed with this tool.
+# Legal and Ethical Disclaimer
+This software is for educational and ethical research purposes only. The developer takes no responsibility for any illegal or malicious use.
 
-Administrator Privileges: The program requires administrator privileges to function due to its use of raw sockets.
+Administrator Privileges: Raw sockets require administrative access to run.
 
-Legal Notice: Unauthorized scanning of a network is illegal in most countries. Please ensure you have explicit legal permission to use this tool on any network other than your own.
+Legal Warning: Scanning networks without explicit permission is illegal in many jurisdictions. Only use this tool on networks you own or have permission to scan.
 
-Ethical Use: Remember that network security tools can be dangerous in the wrong hands. Use this tool responsibly and ethically.
+Ethical Use: The power of this tool comes with a great responsibility. Please use it ethically to enhance security, not to compromise it.
 
-The user is solely responsible for any consequences that arise from the use of this software.
+The user assumes all liability for the use of this program.
 
-How to Compile and Run
-Prerequisites:
+# Getting Started
+Prerequisites
+A Windows machine with administrator privileges.
 
-Visual Studio 2019 or newer.
+A C++ compiler (e.g., Visual Studio 2019+).
 
-The "Desktop development with C++" workload.
+Compilation
+Clone the repository.
 
-Compilation:
+Open the project in Visual Studio.
 
-Open the project folder in Visual Studio.
+Build the project in Release mode.
 
-Go to the "Build" menu and build the project.
+# Usage
+Run the compiled executable from a Command Prompt with administrator rights, providing the target IP address as a command-line argument.
 
-Execution:
+# Bash
 
-Open Command Prompt as an administrator.
-
-Navigate to the directory containing the compiled .exe file.
-
-Run the program using the format PortScanner.exe <IP_Address>. For example:
-
-PortScanner.exe 192.168.1.1
-Contributing
-If you wish to contribute, feel free to open a "pull request" or an "issue."
+PortScanner.exe <IP_Address>
+# Contributing
+We welcome contributions! Please open an issue or submit a pull request if you have ideas for improvements.
